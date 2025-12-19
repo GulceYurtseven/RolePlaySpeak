@@ -1,0 +1,43 @@
+name: role_play_speak
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  dash_chat_2: ^0.0.21
+  flutter_markdown: ^0.7.1
+  cupertino_icons: ^1.0.8
+  speech_to_text: ^7.3.0
+  flutter_tts: ^4.2.3
+  audioplayers: ^6.5.1
+  http: ^1.6.0
+  google_fonts: ^6.3.2
+  shared_preferences: ^2.5.3
+  flutter_dotenv: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/sounds/
+    - .env
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png" # Resminin yolu burası olmalı
+  adaptive_icon_background: "#ffffff" # Arka plan rengi (Beyaz)
+  adaptive_icon_foreground: "assets/icon.png"
